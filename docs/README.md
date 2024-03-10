@@ -2,7 +2,7 @@
 2. Great Food (no hunger)
 3. Good Health
 4. Quality Education
-5. Women's Rights (Gender Equality)
+5. Family Planning
 6. Clean Water
 7. Affordable and Clean Energy
 8. Healthy Economy - Decent Work and Economic Growth
