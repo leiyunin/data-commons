@@ -12,7 +12,7 @@
 10. [Opportunities](opportunities) - Reduced Inequality
 11. [Biodiversity](biodiversity) - Sustainable Cities and Communities
 12. [Conservation](conservation) - Responsible Consumption and Production
-13. [Net Positive](net) - Greenhouse Gas Reduction (Climate Action)
+13. [Net Positive](net) - Greenhouse Gas Reduction Climate Action
 14. [Aquatic](nemo) - Life Below Water
 15. [Wildlife](wildlife) - Life on Land
 16. [Peace and Justice](peace)
