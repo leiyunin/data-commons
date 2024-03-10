@@ -17,3 +17,7 @@
 15. [Wildlife](wildlife) - Life on Land
 16. [Peace and Justice](peace)
 17. [Partnerships to Achieve Goals](partnerships)
+18. [Balanced Budgets](balanced)
+19. [Fast Reliable Transit](transit)
+20. [High Speed Internet](internet)
+21. [Expanding Livable Zones](zones) - Deserts, Space, Underwater, Subterranean
