@@ -7,7 +7,7 @@
 5. [Women's Rights](women) - Gender Equality and Family Planning
 6. [Clean Water](water) - Clean Water and Sanitation
 7. [Energy](energy) - Affordable and Clean Energy
-8. [Healthy Economies](economies) - Decent Work and Economic Growth
+8. [Healthy Economies](economies) - Great Work Conditions and Economic Growth
 9. [Innovation](innovation) - Industry, Innovation and Infrastructure
 10. [Opportunities](opportunities) - Reduced Inequality
 11. [Biodiversity](biodiversity) - Sustainable Cities and Communities
