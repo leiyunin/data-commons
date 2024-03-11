@@ -6,7 +6,7 @@ title: Expanding Livable Zones
 
 # Expanding Livable Zones
 
-Creating environments condusive to increased biodiversity
+Creating environments conducive to increased biodiversity
 
 Transforming Deserts, Space, Underwater and Subterranean Biomes
 
