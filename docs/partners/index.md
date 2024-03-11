@@ -2,4 +2,4 @@
 
 # Partnerships
 
-Goal 17. Network relationships and Input-Output Flow
+Goal 17. Network relations and Input-Output Flow Diagrams
