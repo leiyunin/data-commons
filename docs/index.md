@@ -30,7 +30,7 @@ The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four sub
 14. [Aquatic](nemo)
 15. [Wildlife](wildlife)
 16. [Peace and Justice](peace)
-17. [Partnerships to Achieve Goals](partnerships)
+17. [Partnerships](partners)
 18. [Balanced Budgets](balanced)
 19. [Fast Reliable Transit](transit)
 20. [High Speed Internet](internet)
