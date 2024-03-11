@@ -1,12 +1,25 @@
 # Data Commons
 
-This is an [Observable Framework](https://observablehq.com/framework) project. To start the local preview server, run:
+This is an [Observable Framework](https://observablehq.com/framework) project. 
+To start the local preview server, run in data-commons:
 
-```
-yarn dev
-```
+	yarn install
 
-Then visit <http://localhost:3000> to preview your project.
+Start an http server in your webroot, external to the data-commons folder.
+
+	cd ../ && python -m http.server 8887
+
+Pull down the localsite repo if you don't have it already.
+This provides navigation when you view the docs folder.
+
+	git clone https://github.com/modelearth/localsite localsite &&
+	cd data-commons
+
+Then visit the following to view:
+<http://localhost:8887/data-commons/dist>
+<http://localhost:8887/data-commons/docs>
+
+This alternative to `yarn dev` allows us to view locally via http, including files in docs.
 
 For more, see <https://observablehq.com/framework/getting-started>.
 
