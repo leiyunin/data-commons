@@ -7,7 +7,9 @@ Duplicate goals 17-21 under Local Innovation as subtopics.
 Avoid showing deeper levels like food/balance in the left navigation.
 
 View the [Config Doc](https://observablehq.com/framework/config) for a solution. The Config Doc has cascading navigation itself.  
-For coding tips, describe to [chat.openai.com](https://chat.openai.com).  
+For coding tips, describe to [chat.openai.com](https://chat.openai.com).
+
+TO DO: Is there a way to turn off the datetime update in the "dist" file when the file has not changed?
 <br>
 
 ## Goal Visualization

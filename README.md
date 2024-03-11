@@ -1,16 +1,20 @@
 # Data Commons
 
 This is an [Observable Framework](https://observablehq.com/framework) project. 
-To start the local preview server, run in data-commons:
+Run once daily when you start - updates dependencies defined in [package.json](package.json):
 
 	yarn install
 
-Start an http server in your webroot, external to the data-commons folder.
+To build - this pulls from APIs and outputs from "[docs](docs)" to static files in "[dist](dist)":
+
+	yarn build
+
+If you haven't yet, start an http server in your webroot, external to the data-commons folder.
 
 	cd ../ && python -m http.server 8887
 
-Pull down the localsite repo if you don't have it already.
-This provides navigation when you view the docs folder.
+If you haven't yet, pull down the [localsite repo](https://github.com/modelearth/localsite).
+This provides navigation when you view src files in the "[docs](docs)" folder.
 
 	git clone https://github.com/modelearth/localsite localsite &&
 	cd data-commons
