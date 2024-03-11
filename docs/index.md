@@ -1,7 +1,7 @@
 # Data Commons
 TO DO: Display the 21 goals as subtopics under a parent called "Goal Visualization".  
 Avoid changing the folder paths for this nav setup.  There will be 4 parent navs total:  
-Global Goals, Local Innovation, Green Energy, Healthy Food  
+Goal Visualization, Local Innovation, Green Energy, Healthy Food  
 Duplicate these 3 as parent nav: Local Innovation, Green Energy, Healthy Food  
 Duplicate goals 17-21 under Local Innovation as subtopics.  
 Avoid showing deeper levels like food/balance in the left navigation.
