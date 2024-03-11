@@ -1,5 +1,5 @@
 [Data Commons](../)
 
-# Women's Rights
+# Gender Equality
 
-Goal 5. Gender Equality and Family Planning
+Goal 5. Women's Rights and Family Planning

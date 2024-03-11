@@ -16,7 +16,7 @@ The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four sub
 2. [Healthy Food](food)
 3. [Good Health](health)
 4. [Quality Education](education)
-5. [Women's Rights](women)
+5. [Gender Equality](women)
 6. [Clean Water](water)
 7. [Energy](energy)
 8. [Healthy Economies](economies)
