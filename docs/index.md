@@ -1,8 +1,10 @@
 # Data Commons
-TO DO: Move the 21 goals under a parent sidenav called "Goal Visualization".  
-Duplicate these 3 as parent sidenav: Energy, Healthy Food, Innovation.  
-Duplicate 18-21 under Innovation. 
-Avoid showing deeper levels like food/balance in the left navigation. 
+TO DO: Display the 21 goals as subtopics under a parent called "Goal Visualization".  
+Avoid changing the folder paths for this nav setup.  There will be 4 parent navs total:  
+Global Goals, Local Innovation, Green Energy, Healthy Food  
+Duplicate these 3 as parent nav: Local Innovation, Green Energy, Healthy Food  
+Duplicate goals 17-21 under Local Innovation as subtopics.  
+Avoid showing deeper levels like food/balance in the left navigation.
 
 View the [Config Doc](https://observablehq.com/framework/config) for a solution. The Config Doc has cascading navigation itself.  
 For coding tips, describe to [chat.openai.com](https://chat.openai.com).  
