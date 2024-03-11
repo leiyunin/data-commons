@@ -52,8 +52,8 @@ You'll use `yarn build` the most.
 
 Instead, after you've run `python -m http.server 8887` in your webroot, view at:
 
-[http://localhost:8887/data-commons/docs/](http://localhost:8887/data-commons/docs/)
-[http://localhost:8887/data-commons/dist/](http://localhost:8887/data-commons/dist/)
+[http://localhost:8887/data-commons/docs](http://localhost:8887/data-commons/docs/)  
+[http://localhost:8887/data-commons/dist](http://localhost:8887/data-commons/dist/)
 
 
 | Command           | Description                                              |
