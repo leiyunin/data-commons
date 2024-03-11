@@ -1,25 +1,25 @@
 # Common Goals
 
-Placeholders for the [UN's seventeen 30-year Goals](/data-pipeline/international/), plus four expansions of Goal 9: Innovation.
+The [UN's seventeen 30-year Goals](/data-pipeline/international/), plus four subsets of Goal 9: Innovation.
 
 1. [Good Paying Jobs](jobs)
 2. [Healthy Food](food)
 3. [Good Health](health)
 4. [Quality Education](education)
-5. [Women's Rights](women) - Gender Equality and Family Planning
-6. [Clean Water](water) - Clean Water and Sanitation
-7. [Energy](energy) - Affordable and Clean Energy
-8. [Healthy Economies](economies) - Great Work Conditions and Economic Growth
-9. [Innovation](innovation) - Industry, Innovation and Infrastructure
-10. [Opportunities](opportunities) - Reduced Inequality
-11. [Biodiversity](biodiversity) - Sustainable Cities and Communities
-12. [Conservation](conservation) - Responsible Consumption and Production
-13. [Net Positive](net) - Greenhouse Gas Reduction Climate Action
-14. [Aquatic](nemo) - Life Below Water
-15. [Wildlife](wildlife) - Life on Land
+5. [Women's Rights](women)
+6. [Clean Water](water)
+7. [Energy](energy)
+8. [Healthy Economies](economies)
+9. [Innovation](innovation)
+10. [Opportunities](opportunities)
+11. [Biodiversity](biodiversity)
+12. [Conservation](conservation)
+13. [Net Positive](net)
+14. [Aquatic](nemo)
+15. [Wildlife](wildlife)
 16. [Peace and Justice](peace)
 17. [Partnerships to Achieve Goals](partnerships)
 18. [Balanced Budgets](balanced)
 19. [Fast Reliable Transit](transit)
 20. [High Speed Internet](internet)
-21. [Expanding Livable Zones](zones) - Deserts, Space, Underwater, Subterranean
+21. [Expanding Livable Zones](zones)
