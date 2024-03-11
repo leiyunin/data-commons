@@ -22,7 +22,7 @@ The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four sub
 18. [Balanced Budgets](balanced)
 19. [Fast Reliable Transit](transit)
 20. [High Speed Internet](internet)
-21. [Expanding Livable Zones](zones)
+21. [Expanding Livable Zones](space)
 
 <br>
 <style>

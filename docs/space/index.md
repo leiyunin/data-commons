@@ -1,8 +1,17 @@
 ---
-title: Example report
+title: Expanding Livable Zones
 ---
 
-# A brief history of space exploration
+[Data Commons](../)
+
+# Expanding Livable Zones
+
+Creating environments condusive to increased biodiversity
+
+Transforming Deserts, Space, Underwater and Subterranean Biomes
+
+
+## A brief history of space exploration
 
 This report is a brief overview of the history and current state of rocket launches and space exploration.
 
