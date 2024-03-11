@@ -1,6 +1,6 @@
 # Data Commons
 
-TO DO: Avoid showing secondary levels like food/balance in the left navigation. Either show in a cascading menu or hide. View the [Config Doc](https://observablehq.com/framework/config) for a solution. It has cascading navigation itself. For additional coding tips, try [chat.openai.com](https://chat.openai.com).
+TO DO: Avoid showing secondary levels like food/balance in the left navigation. Either show in a cascading menu or hide. View the [Config Doc](https://observablehq.com/framework/config) for a solution. It has cascading navigation itself. Also place the 21 goals under one side nav called "Goal&nbsp;Visualization". For coding tips, describe to [chat.openai.com](https://chat.openai.com).
 
 The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four subsets of goal 9: Innovation.
 
