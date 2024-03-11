@@ -1,5 +1,7 @@
 # Common Goals
 
+Placeholders for the [UN's seventeen 30-year Goals](/data-pipeline/international/), plus four expansions of Goal 9: Innovation.
+
 1. [Good Paying Jobs](jobs)
 2. [Healthy Food](food)
 3. [Good Health](health)
