@@ -44,7 +44,7 @@ toc: false
 
 </style>
 
-# About Observable Framework
+# About Observable
 
 <div class="hero">
   <h1>Hello, Observable Framework</h1>

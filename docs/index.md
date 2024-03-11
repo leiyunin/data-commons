@@ -1,4 +1,4 @@
-# Common Goals
+# Data Commons
 
 The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four subsets of goal 9: Innovation.
 
@@ -23,3 +23,44 @@ The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four sub
 19. [Fast Reliable Transit](transit)
 20. [High Speed Internet](internet)
 21. [Expanding Livable Zones](zones)
+
+<br>
+<style>
+table {
+    display: block;
+    width: 100%;
+    width: max-content;
+    max-width: 100%;
+    overflow: auto;
+    border: 1px solid #ccc;
+}
+table th {
+	text-align: left;
+	font-size: 16px;
+	padding: 6px;
+	border-bottom: 1px solid #ccc;
+}
+table td {
+	padding: 6px;
+}
+</style>
+
+## Commands
+
+You'll use `yarn build` the most.  
+`yarn dev` invokes https which requires installing a cert locally. (Ugh)
+
+Instead, after you've run `python -m http.server 8887` in your webroot, view at:
+
+[http://localhost:8887/data-commons/docs/](http://localhost:8887/data-commons/docs/)
+[http://localhost:8887/data-commons/dist/](http://localhost:8887/data-commons/dist/)
+
+
+| Command           | Description                                              |
+| ----------------- | -------------------------------------------------------- |
+| `yarn install`    | Install or reinstall dependencies                        |
+| `yarn dev`        | Start local preview server                             |
+| `yarn build`      | Build your static site, generating `./dist`              |
+| `yarn deploy`     | Deploy your project to Observable                        |
+| `yarn clean`      | Clear the local data loader cache                        |
+| `yarn observable` | Run commands like `observable help`                      |

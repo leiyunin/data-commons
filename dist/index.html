@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Common Goals | Data Commons</title>
+<title>Data Commons</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
 <link rel="preload" as="style" href="./_observablehq/theme-air,near-midnight.css">
@@ -25,20 +25,24 @@ import "./_observablehq/client.js";
   <ol>
     <li class="observablehq-link"><a href="./women/">Women&#x27;s Rights</a></li>
     <li class="observablehq-link"><a href="./jobs/">Good Paying Jobs</a></li>
+    <li class="observablehq-link"><a href="./index-old/">About Observable</a></li>
     <li class="observablehq-link"><a href="./food/">Healthy Food</a></li>
-    <li class="observablehq-link"><a href="./example-dashboard">Example dashboard</a></li>
-    <li class="observablehq-link"><a href="./example-report">Example report</a></li>
-    <li class="observablehq-link"><a href="./index-old">About Observable Framework</a></li>
+    <li class="observablehq-link"><a href="./example-report/">Example report</a></li>
+    <li class="observablehq-link"><a href="./example-dashboard/">Example dashboard</a></li>
   </ol>
 </nav>
 <script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),o=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?o.checked=r==="true":o.indeterminate=!0;for(const t of document.querySelectorAll("#observablehq-sidebar summary")){const s=t.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${t.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
 <aside id="observablehq-toc" data-selector="h1:not(:first-of-type), h2:first-child, :not(h1) + h2">
 <nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#commands">Commands</a></li>
+</ol>
 </nav>
 </aside>
 <div id="observablehq-center">
 <main id="observablehq-main" class="observablehq">
-<h1 id="common-goals" tabindex="-1"><a class="observablehq-header-anchor" href="#common-goals">Common Goals</a></h1>
+<h1 id="data-commons" tabindex="-1"><a class="observablehq-header-anchor" href="#data-commons">Data Commons</a></h1>
 <p>The <a href="/data-pipeline/international/">UN's seventeen 30-year goals</a>, plus four subsets of goal 9: Innovation.</p>
 <ol>
 <li><a href="jobs">Good Paying Jobs</a></li>
@@ -63,9 +67,69 @@ import "./_observablehq/client.js";
 <li><a href="internet">High Speed Internet</a></li>
 <li><a href="zones">Expanding Livable Zones</a></li>
 </ol>
+<br>
+<style>
+table {
+    display: block;
+    width: 100%;
+    width: max-content;
+    max-width: 100%;
+    overflow: auto;
+    border: 1px solid #ccc;
+}
+table th {
+	text-align: left;
+	font-size: 16px;
+	padding: 6px;
+	border-bottom: 1px solid #ccc;
+}
+table td {
+	padding: 6px;
+}
+</style>
+<h2 id="commands" tabindex="-1"><a class="observablehq-header-anchor" href="#commands">Commands</a></h2>
+<p>You'll use <code>yarn build</code> the most.<br>
+<code>yarn dev</code> invokes https which requires installing a cert locally. (Ugh)</p>
+<p>Instead, after you've run <code>python -m http.server 8887</code> in your webroot, view at:</p>
+<p><a href="http://localhost:8887/data-commons/docs/">http://localhost:8887/data-commons/docs/</a>
+<a href="http://localhost:8887/data-commons/dist/">http://localhost:8887/data-commons/dist/</a></p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>yarn install</code></td>
+<td>Install or reinstall dependencies</td>
+</tr>
+<tr>
+<td><code>yarn dev</code></td>
+<td>Start local preview server</td>
+</tr>
+<tr>
+<td><code>yarn build</code></td>
+<td>Build your static site, generating <code>./dist</code></td>
+</tr>
+<tr>
+<td><code>yarn deploy</code></td>
+<td>Deploy your project to Observable</td>
+</tr>
+<tr>
+<td><code>yarn clean</code></td>
+<td>Clear the local data loader cache</td>
+</tr>
+<tr>
+<td><code>yarn observable</code></td>
+<td>Run commands like <code>observable help</code></td>
+</tr>
+</tbody>
+</table>
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="next" href="./women/"><span>Women&#x27;s Rights</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank">Observable</a> on <a title="2024-03-11T08:29:17">Mar 11, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank">Observable</a> on <a title="2024-03-11T08:57:05">Mar 11, 2024</a>.</div>
 </footer>
 </div>
