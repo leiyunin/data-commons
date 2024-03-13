@@ -1,16 +1,4 @@
 # Data Commons
-TO DO: Display the 21 goals as subtopics under a parent called "Goal Visualization".  
-Avoid changing the folder paths for this nav setup.  There will be 4 parent navs total:  
-Goal Visualization, Local Innovation, Green Energy, Healthy Food  
-Duplicate these 3 as parent nav: Local Innovation, Green Energy, Healthy Food  
-Duplicate goals 17-21 under Local Innovation as subtopics.  
-Avoid showing deeper levels like food/balance in the left navigation.
-
-View the [Config Doc](https://observablehq.com/framework/config) for a solution. The Config Doc has cascading navigation itself.  
-For coding tips, describe to [chat.openai.com](https://chat.openai.com).
-
-TO DO: Is there a way to turn off the datetime update in the "dist" file when the file has not changed?
-<br>
 
 ## Goal Visualization
 
@@ -39,6 +27,15 @@ The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four sub
 21. [Expanding Livable Zones](space)
 
 <br>
+
+TO DO: View the [Config Doc](https://observablehq.com/framework/config) and figure out how it's cascading navigation is set up. Display the 21 goals as subtopics under a parent called "Goal Visualization".  (Avoid changing the existing folder paths for this nav setup.
+
+Display 4 side navigation parent topics:  
+Goal Visualization, Local Innovation, Energy, Healthy Food  
+List goals 17-21 under the Local Innovation side navigation.  
+Avoid showing goal sublevels (example: food/balance) in the left navigation.
+<br>
+
 <style>
 table {
     display: block;
