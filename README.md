@@ -9,6 +9,8 @@ To build - this pulls from APIs and outputs from "[docs](docs)" to static files 
 
 	yarn build
 
+The following is an alternative to using `yarn dev` which allows us view multiple repos in one webroot.
+
 If you haven't yet, start an http server in your webroot, external to the data-commons folder.
 
 	cd ../ && python -m http.server 8887
@@ -23,25 +25,31 @@ Then visit the following to view:
 <http://localhost:8887/data-commons/dist>
 <http://localhost:8887/data-commons/docs>
 
-This alternative to `yarn dev` allows us to view locally via http, including files in docs.
+Turn on GitHub Pages for both repos so we can preview changes.
+
 
 For more, see <https://observablehq.com/framework/getting-started>.
 
 ## Project structure
 
-A typical Framework project looks like this:
+In our project, folders for components and data reside in multiple "goal" folders:
 
 ```ini
 .
 ├─ docs
-│  ├─ components
-│  │  └─ timeline.js           # an importable module
-│  ├─ data
+│  ├─ space
+│  │  ├─ components
+│  │  │ 	└─ timeline.js     # an importable module
+│  │  ├─ data
+│  │  │ 	└─ events.json     # a static data file
 │  │  ├─ launches.csv.js       # a data loader
-│  │  └─ events.json           # a static data file
-│  ├─ example-dashboard.md     # a page
-│  ├─ example-report.md        # another page
-│  └─ index.md                 # the home page
+│  ├─ jobs
+│  ├─ transit
+│  ├─ innovation
+│  ├─ education
+│  ├─ economy
+│  ├─ index.html               # a localsite page visible in docs
+│  └─ index.md                 # a dist page
 ├─ .gitignore
 ├─ observablehq.config.ts      # the project config file
 ├─ package.json
