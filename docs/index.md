@@ -23,7 +23,7 @@ The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four sub
 5. [Gender Equality](women)
 6. [Clean Water](water)
 7. [Energy](energy)
-8. [Healthy Economies](economies)
+8. [Healthy Economies](economy)
 9. [Innovation](innovation)
 10. [Opportunities](opportunities)
 11. [Biodiversity](biodiversity)
