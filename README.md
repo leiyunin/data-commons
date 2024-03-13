@@ -9,8 +9,9 @@ To build - this pulls from APIs and outputs from "[docs](docs)" to static files 
 
 	yarn build
 
-The following is an alternative to using `yarn dev` which allows us view multiple repos in one webroot.
+The following is an alternative to using `yarn dev`
 
+This setup allows you to view multiple repos in one webroot.
 If you haven't yet, start an http server in your webroot, external to the data-commons folder.
 
 	cd ../ && python -m http.server 8887
