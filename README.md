@@ -44,13 +44,14 @@ In our project, folders for components and data reside in multiple "goal" folder
 
 ```ini
 data-commons
+├─ README.md
 ├─ docs
 │  ├─ space
 │  │  ├─ components
 │  │  │ 	└─ timeline.js     # an importable module
 │  │  ├─ data
 │  │  │ 	└─ events.json     # a static data file
-│  │  ├─ launches.csv.js       # a data loader
+│  │  └─ launches.csv.js       # a data loader
 │  ├─ jobs
 │  ├─ transit
 │  ├─ innovation
@@ -59,10 +60,9 @@ data-commons
 │  ├─ index.html               # a localsite page visible in docs
 │  └─ index.md                 # a dist page
 ├─ dist
-├─ .gitignore
 ├─ observablehq.config.ts      # the project config file
 ├─ package.json
-└─ README.md
+└─ .gitignore
 ```
 
 **`docs`** - This is the “source root” — where your source files live. Pages go here. Each page is a Markdown file. Observable Framework uses [file-based routing](https://observablehq.com/framework/routing), which means that the name of the file controls where the page is served. You can create as many pages as you like. Use folders to organize your pages.
