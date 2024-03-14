@@ -1,5 +1,5 @@
 [Data Commons](../)
 
-# Placeholder
+# Opportunities
 
-Goal . 
+Goal 10. Reduced Inequality

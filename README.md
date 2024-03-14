@@ -9,7 +9,7 @@ To build - this pulls from APIs and outputs from "[docs](docs)" to static files 
 
 	yarn build
 
-The following is an alternative to using `yarn dev`
+The following is an alternative to using `yarn dev` (which you'd use if only viewing dist)
 
 This setup allows you to view multiple repos in one webroot.
 If you haven't yet, start an http server in your webroot, external to the data-commons folder.
@@ -36,7 +36,7 @@ For more, see <https://observablehq.com/framework/getting-started>.
 In our project, folders for components and data reside in multiple "goal" folders:
 
 ```ini
-.
+data-commons
 ├─ docs
 │  ├─ space
 │  │  ├─ components
@@ -51,6 +51,7 @@ In our project, folders for components and data reside in multiple "goal" folder
 │  ├─ economy
 │  ├─ index.html               # a localsite page visible in docs
 │  └─ index.md                 # a dist page
+├─ dist
 ├─ .gitignore
 ├─ observablehq.config.ts      # the project config file
 ├─ package.json

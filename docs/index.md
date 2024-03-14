@@ -75,3 +75,13 @@ Instead, after you've run `python -m http.server 8887` in your webroot, view at:
 | `yarn deploy`     | Deploy your project to Observable                        |
 | `yarn clean`      | Clear the local data loader cache                        |
 | `yarn observable` | Run commands like `observable help`                      |
+
+
+## Google Data Commons
+
+[Statistical Variable Explorer](https://datacommons.org/tools/statvar) - Filter by date and location on more than 10,000 statistical variables to find data for the 21 goals.
+
+We can add a wrapper of the Statistical Variable Explorer.
+
+[The Python Data Loaders](https://docs.datacommons.org/tutorials/) are simpler than the JS ones. In Python, you do not need to handle the crazy API call templates. Finding DCID and property is just one problem in JS, another problem is handling different JSON structures, which is not an issue in Python, as can be seen in this example -
+https://colab.research.google.com/github/datacommonsorg/api-python/blob/master/notebooks/analyzing_census_data.ipynb
