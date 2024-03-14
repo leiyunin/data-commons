@@ -24,7 +24,7 @@ export default {
         {name: "Biodiversity", path: "/biodiversity"},
         {name: "Conservation", path: "/conservation"},
         {name: "Air and Climate", path: "/air"},
-        {name: "Aquatic", path: "/nemo"},
+        {name: "Aquatic", path: "/aquatic"},
         {name: "Wildlife", path: "/wildlife"},
         {name: "Peace and Justice", path: "/peace"},
         {name: "Partnerships", path: "/partners"},
