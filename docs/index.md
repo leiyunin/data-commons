@@ -72,4 +72,4 @@ Instead, after you've run `python -m http.server 8887` in your webroot, view at:
 | `yarn observable` | Run commands like `observable help`                      |
 
 
-
+[Our Setup Notes](../)
