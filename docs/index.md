@@ -1,5 +1,9 @@
 # Data Commons
 
+[The Python Data Loaders](https://docs.datacommons.org/tutorials/) are simpler than the JS ones. In Python, you do not need to handle the crazy API call templates. Finding DCID and property is just one problem in JS, another problem is handling different JSON structures, which is not an issue in Python, as can be seen in this [CoLab&nbsp;for&nbsp;Census&nbsp;Data](https://colab.research.google.com/github/datacommonsorg/api-python/blob/master/notebooks/analyzing_census_data.ipynb).
+
+[We're automating visualizations of the UN Goals Section](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) within the [Statistical Variable Explorer](https://datacommons.org/tools/statvar) for our [Earthscape Chatbot UI fork](/earthscape) - Filter by date and location on more than 10,000 statistical variables. Let's create a wrapper of Statistical Variable Explorer with [fewer hierarchy levels](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase&sv=sdg%2FSI_POV_EMP1.AGE--Y15T24).<br>
+
 ## Goal Visualization
 
 The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four subsets of goal 9: Innovation.
@@ -25,16 +29,7 @@ The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four sub
 19. [Fast Reliable Transit](transit)
 20. [High Speed Internet](internet)
 21. [Expanding Livable Zones](space)
-
-<br>
-
-TO DO: View the [Config Doc](https://observablehq.com/framework/config) and figure out how it's cascading navigation is set up. Display the 21 goals as subtopics under a parent called "Goal Visualization".  (Avoid changing the existing folder paths for this nav setup.
-
-Display 4 side navigation parent topics:  
-Goal Visualization, Local Innovation, Energy, Healthy Food  
-List goals 17-21 under the Local Innovation side navigation.  
-Avoid showing goal sublevels (example: food/balance) in the left navigation.
-<br>
+<br><br>
 
 <style>
 table {
@@ -77,11 +72,4 @@ Instead, after you've run `python -m http.server 8887` in your webroot, view at:
 | `yarn observable` | Run commands like `observable help`                      |
 
 
-## Google Data Commons
 
-[Statistical Variable Explorer](https://datacommons.org/tools/statvar) - Filter by date and location on more than 10,000 statistical variables to find data for the 21 goals.
-
-We can add a wrapper of the Statistical Variable Explorer.
-
-[The Python Data Loaders](https://docs.datacommons.org/tutorials/) are simpler than the JS ones. In Python, you do not need to handle the crazy API call templates. Finding DCID and property is just one problem in JS, another problem is handling different JSON structures, which is not an issue in Python, as can be seen in this example -
-https://colab.research.google.com/github/datacommonsorg/api-python/blob/master/notebooks/analyzing_census_data.ipynb

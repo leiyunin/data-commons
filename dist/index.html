@@ -75,14 +75,16 @@ import "./_observablehq/client.js";
 <nav>
 <div>Contents</div>
 <ol>
+<li class="observablehq-secondary-link"><a href="#goal-visualization">Goal Visualization</a></li>
 <li class="observablehq-secondary-link"><a href="#commands">Commands</a></li>
-<li class="observablehq-secondary-link"><a href="#google-data-commons">Google Data Commons</a></li>
 </ol>
 </nav>
 </aside>
 <div id="observablehq-center">
 <main id="observablehq-main" class="observablehq">
 <h1 id="data-commons" tabindex="-1"><a class="observablehq-header-anchor" href="#data-commons">Data Commons</a></h1>
+<p><a href="https://docs.datacommons.org/tutorials/">The Python Data Loaders</a> are simpler than the JS ones. In Python, you do not need to handle the crazy API call templates. Finding DCID and property is just one problem in JS, another problem is handling different JSON structures, which is not an issue in Python, as can be seen in this <a href="https://colab.research.google.com/github/datacommonsorg/api-python/blob/master/notebooks/analyzing_census_data.ipynb">CoLab&nbsp;for&nbsp;Census&nbsp;Data</a>.</p>
+<p><a href="https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&amp;d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase">We're automating visualizations of the UN Goals Section</a> within the <a href="https://datacommons.org/tools/statvar">Statistical Variable Explorer</a> for our <a href="/earthscape">Earthscape Chatbot UI fork</a> - Filter by date and location on more than 10,000 statistical variables. Let's create a wrapper of Statistical Variable Explorer with <a href="https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&amp;d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase&amp;sv=sdg%2FSI_POV_EMP1.AGE--Y15T24">fewer hierarchy levels</a>.<br></p>
 <h2 id="goal-visualization" tabindex="-1"><a class="observablehq-header-anchor" href="#goal-visualization">Goal Visualization</a></h2>
 <p>The <a href="/data-pipeline/international/">UN's seventeen 30-year goals</a>, plus four subsets of goal 9: Innovation.</p>
 <ol>
@@ -106,15 +108,9 @@ import "./_observablehq/client.js";
 <li><a href="balanced">Balanced Budgets</a></li>
 <li><a href="transit">Fast Reliable Transit</a></li>
 <li><a href="internet">High Speed Internet</a></li>
-<li><a href="space">Expanding Livable Zones</a></li>
+<li><a href="space">Expanding Livable Zones</a>
+<br><br></li>
 </ol>
-<br>
-<p>TO DO: View the <a href="https://observablehq.com/framework/config">Config Doc</a> and figure out how it's cascading navigation is set up. Display the 21 goals as subtopics under a parent called "Goal Visualization".  (Avoid changing the existing folder paths for this nav setup.</p>
-<p>Display 4 side navigation parent topics:<br>
-Goal Visualization, Local Innovation, Energy, Healthy Food<br>
-List goals 17-21 under the Local Innovation side navigation.<br>
-Avoid showing goal sublevels (example: food/balance) in the left navigation.
-<br></p>
 <style>
 table {
     display: block;
@@ -174,11 +170,6 @@ table td {
 </tr>
 </tbody>
 </table>
-<h2 id="google-data-commons" tabindex="-1"><a class="observablehq-header-anchor" href="#google-data-commons">Google Data Commons</a></h2>
-<p><a href="https://datacommons.org/tools/statvar">Statistical Variable Explorer</a> - Filter by date and location on more than 10,000 statistical variables to find data for the 21 goals.</p>
-<p>We can add a wrapper of the Statistical Variable Explorer.</p>
-<p><a href="https://docs.datacommons.org/tutorials/">The Python Data Loaders</a> are simpler than the JS ones. In Python, you do not need to handle the crazy API call templates. Finding DCID and property is just one problem in JS, another problem is handling different JSON structures, which is not an issue in Python, as can be seen in this example -
-https://colab.research.google.com/github/datacommonsorg/api-python/blob/master/notebooks/analyzing_census_data.ipynb</p>
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="next" href="./jobs"><span>Good Paying Jobs</span></a></nav>
