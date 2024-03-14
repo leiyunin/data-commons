@@ -10,7 +10,7 @@
 <link rel="modulepreload" href="../_observablehq/client.js">
 <link rel="modulepreload" href="../_observablehq/runtime.js">
 <link rel="modulepreload" href="../_observablehq/stdlib.js">
-<link rel="modulepreload" href="../_import/jobs/data_loader.c6e8fc24.js">
+<link rel="modulepreload" href="../_import/components/data_loader.c6e8fc24.js">
 <script type="module">
 
 import {define} from "../_observablehq/client.js";
@@ -34,8 +34,8 @@ define({id: "7938cf84", outputs: ["addSuggestionToInput"], body: () => {
 return {addSuggestionToInput};
 }});
 
-define({id: "5a44865c", outputs: ["loadDataCommons","displayJsonData"], body: async () => {
-const {loadDataCommons, displayJsonData} = await import("../_import/jobs/data_loader.c6e8fc24.js");
+define({id: "b85bc961", outputs: ["loadDataCommons","displayJsonData"], body: async () => {
+const {loadDataCommons, displayJsonData} = await import("../_import/components/data_loader.c6e8fc24.js");
   
 return {loadDataCommons,displayJsonData};
 }});
@@ -251,7 +251,7 @@ define({id: "fddc5e6c", body: () => {
 <li>Property: -&gt;[nearbyPlaces, landArea]</li>
 </ul>
 <div id="cell-7938cf84" class="observablehq observablehq--block"></div>
-<div id="cell-5a44865c" class="observablehq observablehq--block"></div>
+<div id="cell-b85bc961" class="observablehq observablehq--block"></div>
 <div id="cell-1a028a3e" class="observablehq observablehq--block"></div>
 <div id="cell-fddc5e6c" class="observablehq observablehq--block"></div>
 </main>

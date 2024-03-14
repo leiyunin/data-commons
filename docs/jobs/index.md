@@ -140,7 +140,7 @@ For example, to display `nearbyPlaces` and `landArea` of Georgia:
 ```
 
 ```js
-  import {loadDataCommons,displayJsonData} from "./data_loader.js";
+  import {loadDataCommons,displayJsonData} from "../components/data_loader.js";
 ```
 
 ```js
