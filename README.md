@@ -1,5 +1,11 @@
 # Data Commons
 
+**Root of UN Data from Google API:** - [Start here as we automate SDG Goal visualization](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase) - TO DO: Pull this list as navigation
+
+[Data Loader](https://observablehq.com/framework/loaders) - Let's load frequent requests into static files. (Good for UN Goal navigation simplification.)
+
+---
+
 This is an [Observable Framework](https://observablehq.com/framework) project. 
 Run once daily when you start - updates dependencies defined in [package.json](package.json):
 
