@@ -2,7 +2,9 @@
 
 # Inclusive
 
-Goal 10. Open Opportunities that Expand Possibilities
+Goal 10. Reducing Inequalities
+
+Open Opportunities that Expand Possibilities
 
 Which countries are making fast progress
 toward increasing middle&nbsp;income&nbsp;wealth?
