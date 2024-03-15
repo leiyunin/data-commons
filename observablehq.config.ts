@@ -8,51 +8,27 @@ export default {
   // all pages will be listed in alphabetical order. Listing pages explicitly
   // lets you organize them into sections and have unlisted pages.
   pages: [
-    {
-      name: "Goals",
-      pages: [
-        {name: "Good Paying Jobs", path: "/jobs"},
-        {name: "Healthy Food", path: "/food"},
-        {name: "Good Health", path: "/health"},
-        {name: "Quality Education", path: "/education"},
-        {name: "Gender Equality", path: "/women"},
-        {name: "Clean Water", path: "/water"},
-        {name: "Energy", path: "/energy"},
-        {name: "Healthy Economies", path: "/economy"},
-        {name: "Local Innovation", path: "/innovation"},
-        {name: "Opportunities", path: "/opportunities"},
-        {name: "Biodiversity", path: "/biodiversity"},
-        {name: "Conservation", path: "/conservation"},
-        {name: "Air and Climate", path: "/air"},
-        {name: "Aquatic", path: "/aquatic"},
-        {name: "Wildlife", path: "/wildlife"},
-        {name: "Peace and Justice", path: "/peace"},
-        {name: "Partnerships", path: "/partners"},
-      ]
-    },
-    {
-      name: "Innovation",
-      pages: [
-        {name: "Partnerships to Achieve Goals", path: "/partners"},
-        {name: "Balanced Budgets", path: "/balanced"},
-        {name: "Fast Reliable Transit", path: "/transit"},
-        {name: "High Speed Internet", path: "/internet"},
-        {name: "Expanding Livable Zones", path: "/space"},
-      ]
-    },
-    {
-      name: "Energy",
-      pages: [
-        {name: "Clean Energy", path: "/energy"},
-      ]
-    },
-    {
-      name: "Food",
-      pages: [
-        {name: "Healthy Food", path: "/food"},
-        {name: "Balanced Diets", path: "/food/balance"},
-      ]
-    }
+    {name: "Good Paying Jobs", path: "/jobs"},
+    {name: "Healthy Food", path: "/food"},
+    {name: "Good Health", path: "/health"},
+    {name: "Quality Education", path: "/education"},
+    {name: "Gender Equality", path: "/women"},
+    {name: "Clean Water", path: "/water"},
+    {name: "Energy", path: "/energy"},
+    {name: "Healthy Economies", path: "/economy"},
+    {name: "Local Innovation", path: "/innovation"},
+    {name: "Opportunities", path: "/opportunities"},
+    {name: "Biodiversity", path: "/biodiversity"},
+    {name: "Conservation", path: "/conservation"},
+    {name: "Air and Climate", path: "/air"},
+    {name: "Aquatic", path: "/aquatic"},
+    {name: "Wildlife", path: "/wildlife"},
+    {name: "Peace and Justice", path: "/peace"},
+    {name: "Partnerships", path: "/partners"},
+    {name: "Balanced Budgets", path: "/balanced"},
+    {name: "Fast Reliable Transit", path: "/transit"},
+    {name: "High Speed Internet", path: "/internet"},
+    {name: "Expanding Livable Zones", path: "/space"},
   ],
 
   // Some additional configuration options and their defaults:
