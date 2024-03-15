@@ -20,4 +20,4 @@ Let's see if we can pull this data into a timeline with continent and countries 
 Reduced Inequality:  
 [Percentage of people living below median income [The Bottom 50%]](https://datacommons.org/tools/statvar#s=dc%2Fs%2FUnitedNationsUn&d=dc%2Fd%2FUnitedNationsUn_SdgIndicatorsDatabase&sv=sdg%2FSI_POV_50MI.INCOME_WEALTH_QUANTILE--B50)
 
-Issue/Bug: In the GDC site, adding countries to the timeline on the page above overlaps them on the same line of the timeline. Lines look different when clicking one just one country.
+Issue/Bug: In the GDC site, adding countries to the timeline on the page above overlaps them on the same line of the timeline. Lines look different when clicking just one country.
