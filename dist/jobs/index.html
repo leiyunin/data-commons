@@ -15,10 +15,12 @@
 
 import {define} from "../_observablehq/client.js";
 
-define({id: "7938cf84", outputs: ["addSuggestionToInput"], body: () => {
+define({id: "4639bce9", outputs: ["addSuggestionToInput"], body: () => {
   function addSuggestionToInput(suggestion, inputId) {
     document.getElementById(inputId).value = suggestion;
   }
+
+  // TO DO - Avoid use of event.target.parentNode
 
   // Event listeners for suggestion bubbles
   document.querySelectorAll('.suggestion-bubble').forEach(item => {
@@ -172,6 +174,15 @@ define({id: "fddc5e6c", body: () => {
     .suggestion-bubble:hover {
       background-color: yellow;
     }
+    .bottomInput {
+      background-color: #ccc;
+      padding: 18px;
+      /*
+      position: fixed;
+      right: 0;
+      top: 0;
+      */
+    }
   </style>
 <h2 id="api-demo" tabindex="-1"><a class="observablehq-header-anchor" href="#api-demo">API Demo</a></h2>
 <p>You can find the desired DCID and property from these sources:</p>
@@ -184,30 +195,50 @@ define({id: "fddc5e6c", body: () => {
 <ul>
 <li><a href="https://docs.datacommons.org/api/rest/v2">Data Commons REST API Documentation</a></li>
 </ul>
-<p>Scroll down for more examples.</p>
-<p><button id="loadDataButton">Load Data Commons</button></p>
+<p>Enter DCID and Property examples below to view JSON Output</p>
+<div class="bottomInput">
+<!-- Hid these until javascript modified -->
+<!--
 <div>
   <label for="dcidInput">Enter DCID:</label>
   <div class="suggestion-container" id="dcidSuggestions">
     <span class="suggestion-bubble">geoId/06</span>
     <span class="suggestion-bubble">Count_Jobs_EconomicDevelopmentAdministration_JobsCreated</span>
     <span class="suggestion-bubble">geoId/13</span>
+   
   </div>
-  <input type="text" id="dcidInput" placeholder="e.g., geoId/06">
+  
 </div>
+
 <div>
   <label for="propertyInput">Enter Property:</label>
   <div class="suggestion-container" id="propertySuggestions">
-    <span class="suggestion-bubble">&lt;-</span>
-    <span class="suggestion-bubble">-&gt;</span>
-    <span class="suggestion-bubble">-&gt;*</span>
-    <span class="suggestion-bubble">-&gt;[nearbyPlaces,landArea]</span>
+    <span class="suggestion-bubble"><-</span>
+    <span class="suggestion-bubble">-></span>
+    <span class="suggestion-bubble">->*</span>
+    <span class="suggestion-bubble">->[nearbyPlaces,landArea]</span>
   </div>
-  <input type="text" id="propertyInput" placeholder="e.g., <-">
+  
 </div>
-<div id="resultContainer"></div>
-<p><button id="downloadButton">Download JSON</button></p>
-<h3 id="api-examples--" tabindex="-1"><a class="observablehq-header-anchor" href="#api-examples--">API Examples -</a></h3>
+-->
+<div style="float:left">
+DCID:<br>
+<input type="text" id="dcidInput" placeholder="e.g., geoId/06" value="Count_Jobs_EconomicDevelopmentAdministration_JobsCreated">
+</div>
+<div style="float:left">
+Property<br>
+<input type="text" id="propertyInput" placeholder="e.g., <-" value="->*">
+</div>
+<div style="float:left">
+&nbsp;
+<button id="downloadButton" style="float:right;background-color:#999;">Download</button>
+<button id="loadDataButton">View JSON</button>
+</div>
+<div style="clear:both"></div>
+</div>
+<div id="resultContainer">JSON Output from Google Data Commons API</div>
+<br>
+<h3 id="api-examples" tabindex="-1"><a class="observablehq-header-anchor" href="#api-examples">API Examples</a></h3>
 <p>Single DCID: Displays a list of properties using the symbol <code>-&gt;</code>.</p>
 <p>For example, to find the properties related to <code>geoId/06</code>:</p>
 <ul>
@@ -226,7 +257,7 @@ define({id: "fddc5e6c", body: () => {
 <li>DCID: geoID/13</li>
 <li>Property: -&gt;[nearbyPlaces, landArea]</li>
 </ul>
-<div id="cell-7938cf84" class="observablehq observablehq--block"></div>
+<div id="cell-4639bce9" class="observablehq observablehq--block"></div>
 <div id="cell-b85bc961" class="observablehq observablehq--block"></div>
 <div id="cell-1a028a3e" class="observablehq observablehq--block"></div>
 <div id="cell-fddc5e6c" class="observablehq observablehq--block"></div>

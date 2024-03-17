@@ -56,6 +56,15 @@ Goal 1. No Poverty - Good Paying Jobs and Assistance
     .suggestion-bubble:hover {
       background-color: yellow;
     }
+    .bottomInput {
+      background-color: #ccc;
+      padding: 18px;
+      /*
+      position: fixed;
+      right: 0;
+      top: 0;
+      */
+    }
   </style>
 
 ## API Demo
@@ -70,10 +79,12 @@ For API examples, you can check:
 
 - [Data Commons REST API Documentation](https://docs.datacommons.org/api/rest/v2)
 
-Scroll down for more examples.
+Enter DCID and Property examples below to view JSON Output
 
-<button id="loadDataButton">Load Data Commons</button>
+<div class="bottomInput">
 
+<!-- Hid these until javascript modified -->
+<!--
 <div>
   <label for="dcidInput">Enter DCID:</label>
   <div class="suggestion-container" id="dcidSuggestions">
@@ -82,7 +93,7 @@ Scroll down for more examples.
     <span class="suggestion-bubble">geoId/13</span>
    
   </div>
-  <input type="text" id="dcidInput" placeholder="e.g., geoId/06">
+  
 </div>
 
 <div>
@@ -93,14 +104,35 @@ Scroll down for more examples.
     <span class="suggestion-bubble">->*</span>
     <span class="suggestion-bubble">->[nearbyPlaces,landArea]</span>
   </div>
-  <input type="text" id="propertyInput" placeholder="e.g., <-">
+  
+</div>
+-->
+
+<div style="float:left">
+DCID:<br>
+<input type="text" id="dcidInput" placeholder="e.g., geoId/06" value="Count_Jobs_EconomicDevelopmentAdministration_JobsCreated">
 </div>
 
-<div id="resultContainer"></div>
+<div style="float:left">
+Property<br>
+<input type="text" id="propertyInput" placeholder="e.g., <-" value="->*">
+</div>
 
-<button id="downloadButton">Download JSON</button>
+<div style="float:left">
+&nbsp;
+<button id="downloadButton" style="float:right;background-color:#999;">Download</button>
+<button id="loadDataButton">View JSON</button>
+</div>
 
-### API Examples - 
+<div style="clear:both"></div>
+
+</div>
+
+
+<div id="resultContainer">JSON Output from Google Data Commons API</div>
+<br>
+
+### API Examples
 
 Single DCID: Displays a list of properties using the symbol `->`.
 
@@ -125,6 +157,8 @@ For example, to display `nearbyPlaces` and `landArea` of Georgia:
   function addSuggestionToInput(suggestion, inputId) {
     document.getElementById(inputId).value = suggestion;
   }
+
+  // TO DO - Avoid use of event.target.parentNode
 
   // Event listeners for suggestion bubbles
   document.querySelectorAll('.suggestion-bubble').forEach(item => {

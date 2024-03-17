@@ -57,7 +57,7 @@ Goal 1. No Poverty - Good Paying Jobs and Assistance
   .suggestion-bubble:hover {
     background-color: yellow;
   }
-  .bottomInputX {
+  .bottomInput {
     background-color: #ccc;
     padding: 10px;
     position: fixed;
@@ -66,7 +66,7 @@ Goal 1. No Poverty - Good Paying Jobs and Assistance
     bottom: 0;
     container-type: normal;
   }
-  #observablehq-centerX {
+  #observablehq-center {
       container-type: initial !important;
   }
 </style>
