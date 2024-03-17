@@ -20,7 +20,7 @@ The [UN's seventeen 30-year goals](/data-pipeline/international/), plus four sub
 10. [Inclusive](inclusive)
 11. [Biodiversity](biodiversity)
 12. [Conservation](conservation)
-13. [Air and Climate](net)
+13. [Air and Climate](air)
 14. [Aquatic](aquatic)
 15. [Wildlife](wildlife)
 16. [Peace and Justice](peace)
