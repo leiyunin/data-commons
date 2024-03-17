@@ -15,12 +15,10 @@
 
 import {define} from "../_observablehq/client.js";
 
-define({id: "4639bce9", outputs: ["addSuggestionToInput"], body: () => {
+define({id: "7938cf84", outputs: ["addSuggestionToInput"], body: () => {
   function addSuggestionToInput(suggestion, inputId) {
     document.getElementById(inputId).value = suggestion;
   }
-
-  // TO DO - Avoid use of event.target.parentNode
 
   // Event listeners for suggestion bubbles
   document.querySelectorAll('.suggestion-bubble').forEach(item => {
@@ -122,68 +120,65 @@ define({id: "fddc5e6c", body: () => {
 <p><a href="../">Data Commons</a></p>
 <h1 id="good-paying-jobs" tabindex="-1"><a class="observablehq-header-anchor" href="#good-paying-jobs">Good Paying Jobs</a></h1>
 <p>Goal 1. No Poverty - Good Paying Jobs and Assistance</p>
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
 <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 20px;
-      padding: 20px;
-    }
-
-    button {
-      background-color: #4CAF50;
-      color: white;
-      padding: 10px 15px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    label {
-      display: block;
-      margin: 10px 0;
-    }
-
-    input {
-      padding: 8px;
-      width: 100%;
-      box-sizing: border-box;
-      margin-bottom: 10px;
-    }
-
-    #resultContainer {
-      margin-top: 20px;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-    }
-
-    .suggestion-container {
-      margin-top: 5px;
-    }
-
-    .suggestion-bubble {
-      display: inline-block;
-      padding: 5px 10px;
-      margin-right: 5px;
-      cursor: pointer;
-      border-radius: 4px;
-      border: 1px solid white; /* Changed border color to white */
-    }
-
-    .suggestion-bubble:hover {
-      background-color: yellow;
-    }
-    .bottomInput {
-      background-color: #ccc;
-      padding: 18px;
-      /*
-      position: fixed;
-      right: 0;
-      top: 0;
-      */
-    }
-  </style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+  }
+<p>button {
+background-color: #4CAF50;
+color: white;
+padding: 10px 15px;
+margin: 10px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}</p>
+<p>label {
+display: block;
+margin: 10px 0;
+}</p>
+<p>input {
+padding: 8px;
+width: 100%;
+box-sizing: border-box;
+margin-bottom: 10px;
+}</p>
+<p>#resultContainer {
+margin-top: 20px;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 4px;
+}</p>
+<p>.suggestion-container {
+margin-top: 5px;
+}</p>
+<p>.suggestion-bubble {
+display: inline-block;
+padding: 5px 10px;
+margin-right: 5px;
+cursor: pointer;
+border-radius: 4px;
+border: 1px solid white; /* Changed border color to white */
+}</p>
+<p>.suggestion-bubble:hover {
+background-color: yellow;
+}
+.bottomInput {
+background-color: #ccc;
+padding: 10px;
+position: fixed;
+background-color: #ccc;
+right: 0;
+bottom: 0;
+container-type: normal;
+}
+#observablehq-center {
+container-type: initial !important;
+}
+</style><p></p>
 <h2 id="api-demo" tabindex="-1"><a class="observablehq-header-anchor" href="#api-demo">API Demo</a></h2>
 <p>You can find the desired DCID and property from these sources:</p>
 <ul>
@@ -195,66 +190,54 @@ define({id: "fddc5e6c", body: () => {
 <ul>
 <li><a href="https://docs.datacommons.org/api/rest/v2">Data Commons REST API Documentation</a></li>
 </ul>
-<p>Enter DCID and Property examples below to view JSON Output</p>
+<p>Scroll down for more examples.</p>
 <div class="bottomInput">
-<!-- Hid these until javascript modified -->
-<!--
-<div>
-  <label for="dcidInput">Enter DCID:</label>
-  <div class="suggestion-container" id="dcidSuggestions">
-    <span class="suggestion-bubble">geoId/06</span>
-    <span class="suggestion-bubble">Count_Jobs_EconomicDevelopmentAdministration_JobsCreated</span>
-    <span class="suggestion-bubble">geoId/13</span>
-   
-  </div>
-  
+<div class="suggestion-container" id="dcidSuggestions">
+<span class="suggestion-bubble">geoId/06</span>
+<span class="suggestion-bubble">Count\_Jobs\_EconomicDevelopmentAdministration\_JobsCreated</span>
+<span class="suggestion-bubble">geoId/13</span>
 </div>
-
-<div>
-  <label for="propertyInput">Enter Property:</label>
-  <div class="suggestion-container" id="propertySuggestions">
-    <span class="suggestion-bubble"><-</span>
-    <span class="suggestion-bubble">-></span>
-    <span class="suggestion-bubble">->*</span>
-    <span class="suggestion-bubble">->[nearbyPlaces,landArea]</span>
-  </div>
-  
-</div>
--->
-<div style="float:left">
-DCID:<br>
-<input type="text" id="dcidInput" placeholder="e.g., geoId/06" value="Count_Jobs_EconomicDevelopmentAdministration_JobsCreated">
+<div class="suggestion-container" id="propertySuggestions">
+<span class="suggestion-bubble">&lt;-</span>
+<span class="suggestion-bubble">-&gt;</span>
+<span class="suggestion-bubble">-&gt;*</span>
+<span class="suggestion-bubble">-&gt;[nearbyPlaces,landArea]</span>
 </div>
 <div style="float:left">
-Property<br>
-<input type="text" id="propertyInput" placeholder="e.g., <-" value="->*">
+<label for="dcidInput">Enter DCID:</label>
+<input type="text" id="dcidInput" placeholder="e.g., geoId/06">
 </div>
 <div style="float:left">
-&nbsp;
-<button id="downloadButton" style="float:right;background-color:#999;">Download</button>
-<button id="loadDataButton" style="margin-right:10px">View JSON</button>
+<label for="propertyInput">Enter Property:</label>
+<input type="text" id="propertyInput" placeholder="e.g., <-">
 </div>
-<div style="clear:both"></div>
+<div style="float:left">
+<label>&nbsp;</label>
+<button id="downloadButton" style="float:right;background-color:#777 !important">JSON</button>
+<button id="loadDataButton">Load</button>
 </div>
-<div id="resultContainer">JSON Output from Google Data Commons API</div>
-<br>
+</div>
+<div id="resultContainer"></div>
 <h3 id="api-examples" tabindex="-1"><a class="observablehq-header-anchor" href="#api-examples">API Examples</a></h3>
-<p><strong>To find the properties related to <code>geoId/06</code></strong><br>
-Display a list of properties using the symbol <code>-&gt;</code>.</p>
-<pre><code>DCID: geoId/06
-Property: -&gt;
-</code></pre>
-<p><strong>To display all the properties of JobsCreated</strong><br>
-Display all values of its properties using <code>-&gt;*</code> to indicate all records.</p>
-<pre><code>DCID: Count_Jobs_EconomicDevelopmentAdministration_JobsCreated
-Property: -&gt;*
-</code></pre>
-<p><strong>To display <code>nearbyPlaces</code> and <code>landArea</code> of Georgia</strong><br>
-Pass a list in the properties column.</p>
-<pre><code>DCID: geoID/13
-Property: -&gt;[nearbyPlaces, landArea]
-</code></pre>
-<div id="cell-4639bce9" class="observablehq observablehq--block"></div>
+<p>Single DCID: Displays a list of properties using the symbol <code>-&gt;</code>.</p>
+<p>For example, to find the properties related to <code>geoId/06</code>:</p>
+<ul>
+<li>DCID: geoId/06</li>
+<li>Property: -&gt;</li>
+</ul>
+<p>Single DCID: Displays all values of its properties using <code>-&gt;*</code> to indicate all records.</p>
+<p>For example, to display all the properties of <code>Count_Jobs_EconomicDevelopmentAdministration_JobsCreated</code>:</p>
+<ul>
+<li>DCID: Count_Jobs_EconomicDevelopmentAdministration_JobsCreated</li>
+<li>Property: -&gt;*</li>
+</ul>
+<p>To display multiple properties of a single DCID, pass a list in the properties column.</p>
+<p>For example, to display <code>nearbyPlaces</code> and <code>landArea</code> of Georgia:</p>
+<ul>
+<li>DCID: geoID/13</li>
+<li>Property: -&gt;[nearbyPlaces, landArea]</li>
+</ul>
+<div id="cell-7938cf84" class="observablehq observablehq--block"></div>
 <div id="cell-b85bc961" class="observablehq observablehq--block"></div>
 <div id="cell-1a028a3e" class="observablehq observablehq--block"></div>
 <div id="cell-fddc5e6c" class="observablehq observablehq--block"></div>
