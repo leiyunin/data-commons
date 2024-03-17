@@ -232,31 +232,28 @@ Property<br>
 <div style="float:left">
 &nbsp;
 <button id="downloadButton" style="float:right;background-color:#999;">Download</button>
-<button id="loadDataButton">View JSON</button>
+<button id="loadDataButton" style="margin-right:10px">View JSON</button>
 </div>
 <div style="clear:both"></div>
 </div>
 <div id="resultContainer">JSON Output from Google Data Commons API</div>
 <br>
 <h3 id="api-examples" tabindex="-1"><a class="observablehq-header-anchor" href="#api-examples">API Examples</a></h3>
-<p>Single DCID: Displays a list of properties using the symbol <code>-&gt;</code>.</p>
-<p>For example, to find the properties related to <code>geoId/06</code>:</p>
-<ul>
-<li>DCID: geoId/06</li>
-<li>Property: -&gt;</li>
-</ul>
-<p>Single DCID: Displays all values of its properties using <code>-&gt;*</code> to indicate all records.</p>
-<p>For example, to display all the properties of <code>Count_Jobs_EconomicDevelopmentAdministration_JobsCreated</code>:</p>
-<ul>
-<li>DCID: Count_Jobs_EconomicDevelopmentAdministration_JobsCreated</li>
-<li>Property: -&gt;*</li>
-</ul>
-<p>To display multiple properties of a single DCID, pass a list in the properties column.</p>
-<p>For example, to display <code>nearbyPlaces</code> and <code>landArea</code> of Georgia:</p>
-<ul>
-<li>DCID: geoID/13</li>
-<li>Property: -&gt;[nearbyPlaces, landArea]</li>
-</ul>
+<p><strong>To find the properties related to <code>geoId/06</code></strong><br>
+Display a list of properties using the symbol <code>-&gt;</code>.</p>
+<pre><code>DCID: geoId/06
+Property: -&gt;
+</code></pre>
+<p><strong>To display all the properties of JobsCreated</strong><br>
+Display all values of its properties using <code>-&gt;*</code> to indicate all records.</p>
+<pre><code>DCID: Count_Jobs_EconomicDevelopmentAdministration_JobsCreated
+Property: -&gt;*
+</code></pre>
+<p><strong>To display <code>nearbyPlaces</code> and <code>landArea</code> of Georgia</strong><br>
+Pass a list in the properties column.</p>
+<pre><code>DCID: geoID/13
+Property: -&gt;[nearbyPlaces, landArea]
+</code></pre>
 <div id="cell-4639bce9" class="observablehq observablehq--block"></div>
 <div id="cell-b85bc961" class="observablehq observablehq--block"></div>
 <div id="cell-1a028a3e" class="observablehq observablehq--block"></div>

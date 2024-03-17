@@ -121,7 +121,7 @@ Property<br>
 <div style="float:left">
 &nbsp;
 <button id="downloadButton" style="float:right;background-color:#999;">Download</button>
-<button id="loadDataButton">View JSON</button>
+<button id="loadDataButton" style="margin-right:10px">View JSON</button>
 </div>
 
 <div style="clear:both"></div>
@@ -134,23 +134,25 @@ Property<br>
 
 ### API Examples
 
-Single DCID: Displays a list of properties using the symbol `->`.
+**To find the properties related to `geoId/06`**  
+Display a list of properties using the symbol `->`.
 
-For example, to find the properties related to `geoId/06`:
-- DCID: geoId/06
-- Property: ->
+    DCID: geoId/06
+    Property: ->
 
-Single DCID: Displays all values of its properties using `->*` to indicate all records.
 
-For example, to display all the properties of `Count_Jobs_EconomicDevelopmentAdministration_JobsCreated`:
-- DCID: Count_Jobs_EconomicDevelopmentAdministration_JobsCreated
-- Property: ->*
+**To display all the properties of JobsCreated**  
+Display all values of its properties using `->*` to indicate all records.
 
-To display multiple properties of a single DCID, pass a list in the properties column.
+    DCID: Count_Jobs_EconomicDevelopmentAdministration_JobsCreated
+    Property: ->*
 
-For example, to display `nearbyPlaces` and `landArea` of Georgia:
-- DCID: geoID/13
-- Property: ->[nearbyPlaces, landArea]
+
+**To display `nearbyPlaces` and `landArea` of Georgia**  
+Pass a list in the properties column.
+
+    DCID: geoID/13
+    Property: ->[nearbyPlaces, landArea]
 
 
 ```js
